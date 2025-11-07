@@ -22,7 +22,7 @@ mae = mean_absolute_error(y_test, y_pred)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
 
-print("🚗 Car Price Prediction Results 🚗")
+print(" Car Price Prediction Results ")
 print("MAE:", round(mae, 2))
 print("MSE:", round(mse, 2))
 print("R² Score:", round(r2, 2))
@@ -46,3 +46,4 @@ plt.figure(figsize=(7,5))
 sns.histplot(y_test - y_pred, kde=True, color='skyblue')
 plt.title("Residual (Error) Distribution")
 plt.show()
+
